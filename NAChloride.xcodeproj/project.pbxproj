@@ -143,6 +143,7 @@
 		006246B81D8E0A91009DDFA8 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
 		128CC132836A8F5E63B7BAB3 /* Pods-NAChloride iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.release.xcconfig"; sourceTree = "<group>"; };
 		1B59426D6493C3077011679C /* Pods-NAChloride.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.release.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.release.xcconfig"; sourceTree = "<group>"; };
+		1D33CFE22CB5878200F3F72B /* NAChloride.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
 		24AC631A38B26C437788F9CF /* libPods-NAChloride.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NAChloride.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3435018D050FD3BF6BC015 /* Pods-NAChloride.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride.debug.xcconfig"; sourceTree = "<group>"; };
 		D324E5DAA51F1E681F9BD03E /* Pods-NAChloride iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NAChloride iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 		006245F61D8E0899009DDFA8 = {
 			isa = PBXGroup;
 			children = (
+				1D33CFE22CB5878200F3F72B /* NAChloride.podspec */,
 				006246021D8E0899009DDFA8 /* NAChloride */,
 				0062460D1D8E0899009DDFA8 /* NAChlorideTests */,
 				006246621D8E0962009DDFA8 /* NAChloride iOS */,
