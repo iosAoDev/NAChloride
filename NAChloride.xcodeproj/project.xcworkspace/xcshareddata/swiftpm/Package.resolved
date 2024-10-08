@@ -1,0 +1,15 @@
+{
+  "originHash" : "a54ab11c5530847bfdb56c39a7a7dd5da528d0bccbe30c816f4303922a576228",
+  "pins" : [
+    {
+      "identity" : "clibsodium",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/tiwoc/Clibsodium.git",
+      "state" : {
+        "revision" : "2ac72772aae26b2da0b15c253d9bb79ba452f66a",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

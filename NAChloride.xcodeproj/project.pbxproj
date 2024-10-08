@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -75,6 +75,8 @@
 		006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
 		006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
 		006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
+		1D26159B2CB56CD500615AC3 /* Clibsodium in Frameworks */ = {isa = PBXBuildFile; productRef = 1D26159A2CB56CD500615AC3 /* Clibsodium */; };
+		1D26159D2CB56D3200615AC3 /* Clibsodium in Frameworks */ = {isa = PBXBuildFile; productRef = 1D26159C2CB56D3200615AC3 /* Clibsodium */; };
 		28F47B575D172E2F519611B9 /* libPods-NAChloride.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC631A38B26C437788F9CF /* libPods-NAChloride.a */; };
 		A0C2E379BFF33AAC053EDEF8 /* libPods-NAChloride iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DBF3B3185FE97082520C3 /* libPods-NAChloride iOS.a */; };
 /* End PBXBuildFile section */
@@ -97,8 +99,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		003E12511D8E0C4A006E9B1D /* NAChloride.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
-		003E12521D8E0C4A006E9B1D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		006246001D8E0899009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		006246031D8E0899009DDFA8 /* NAChloride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAChloride.h; sourceTree = "<group>"; };
 		006246041D8E0899009DDFA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -155,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28F47B575D172E2F519611B9 /* libPods-NAChloride.a in Frameworks */,
+				1D26159B2CB56CD500615AC3 /* Clibsodium in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0C2E379BFF33AAC053EDEF8 /* libPods-NAChloride iOS.a in Frameworks */,
+				1D26159D2CB56D3200615AC3 /* Clibsodium in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,8 +190,6 @@
 		006245F61D8E0899009DDFA8 = {
 			isa = PBXGroup;
 			children = (
-				003E12511D8E0C4A006E9B1D /* NAChloride.podspec */,
-				003E12521D8E0C4A006E9B1D /* Podfile */,
 				006246021D8E0899009DDFA8 /* NAChloride */,
 				0062460D1D8E0899009DDFA8 /* NAChlorideTests */,
 				006246621D8E0962009DDFA8 /* NAChloride iOS */,
@@ -350,11 +350,11 @@
 				006245FC1D8E0899009DDFA8 /* Frameworks */,
 				006245FD1D8E0899009DDFA8 /* Headers */,
 				006245FE1D8E0899009DDFA8 /* Resources */,
-				2B5CB7A81300F028BDD68CF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1D2615962CB56A6700615AC3 /* PBXTargetDependency */,
 			);
 			name = NAChloride;
 			productName = NAChloride;
@@ -388,7 +388,6 @@
 				0062465D1D8E0962009DDFA8 /* Frameworks */,
 				0062465E1D8E0962009DDFA8 /* Headers */,
 				0062465F1D8E0962009DDFA8 /* Resources */,
-				AB5732FCA60D53D22F862CC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -427,6 +426,7 @@
 				TargetAttributes = {
 					006245FF1D8E0899009DDFA8 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 1600;
 						ProvisioningStyle = Automatic;
 					};
 					006246081D8E0899009DDFA8 = {
@@ -448,9 +448,13 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 006245F61D8E0899009DDFA8;
+			packageReferences = (
+				1D2615942CB0544000615AC3 /* XCRemoteSwiftPackageReference "Clibsodium" */,
+			);
 			productRefGroup = 006246011D8E0899009DDFA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -501,28 +505,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NAChloride-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		2B5CB7A81300F028BDD68CF6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAChloride/Pods-NAChloride-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		661DDCF77CAF387E58AED711 /* [CP] Check Pods Manifest.lock */ = {
@@ -531,28 +523,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NAChloride iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AB5732FCA60D53D22F862CC1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NAChloride iOS/Pods-NAChloride iOS-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -640,6 +620,10 @@
 			isa = PBXTargetDependency;
 			target = 006246601D8E0962009DDFA8 /* NAChloride iOS */;
 			targetProxy = 0062466B1D8E0963009DDFA8 /* PBXContainerItemProxy */;
+		};
+		1D2615962CB56A6700615AC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 1D2615952CB56A6700615AC3 /* Clibsodium */;
 		};
 /* End PBXTargetDependency section */
 
@@ -741,6 +725,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E3435018D050FD3BF6BC015 /* Pods-NAChloride.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -750,10 +735,16 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -761,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B59426D6493C3077011679C /* Pods-NAChloride.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -770,10 +762,15 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
@@ -782,7 +779,11 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NAChlorideTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChlorideTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -793,7 +794,11 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = NAChlorideTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChlorideTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -812,7 +817,11 @@
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
@@ -834,7 +843,11 @@
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
@@ -850,7 +863,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NAChloride iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -863,7 +880,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "NAChloride iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -920,6 +941,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1D2615942CB0544000615AC3 /* XCRemoteSwiftPackageReference "Clibsodium" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tiwoc/Clibsodium.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1D2615952CB56A6700615AC3 /* Clibsodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2615942CB0544000615AC3 /* XCRemoteSwiftPackageReference "Clibsodium" */;
+			productName = Clibsodium;
+		};
+		1D26159A2CB56CD500615AC3 /* Clibsodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2615942CB0544000615AC3 /* XCRemoteSwiftPackageReference "Clibsodium" */;
+			productName = Clibsodium;
+		};
+		1D26159C2CB56D3200615AC3 /* Clibsodium */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1D2615942CB0544000615AC3 /* XCRemoteSwiftPackageReference "Clibsodium" */;
+			productName = Clibsodium;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 006245F71D8E0899009DDFA8 /* Project object */;
 }
