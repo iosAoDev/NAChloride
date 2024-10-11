@@ -10,7 +10,7 @@
 
 #import "NAInterface.h"
 
-#import "sodium.h"
+@import Clibsodium;
 
 @implementation NABox
 
