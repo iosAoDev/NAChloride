@@ -21,12 +21,10 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {
     "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
-    "OBJC_INCLUDE_PATH" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
   }
 
   s.user_target_xcconfig = {
     "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
-    "OBJC_INCLUDE_PATH" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
   }
   
   s.vendored_frameworks = "Clibsodium.xcframework"
