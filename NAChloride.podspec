@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.author       = { "Gabriel Handford" => "gabrielh@gmail.com" }
   s.source       = { :git => "hhttps://github.com/iosAoDev/NAChloride.git", :branch => 'master' }
   s.requires_arc = true
-  s.dependency 'Clibsodium'
 
   s.ios.deployment_target = "12.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
