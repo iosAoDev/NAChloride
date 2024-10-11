@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.dependency 'Clibsodium'
 
-  s.ios.deployment_target = "7.0"
+  s.ios.deployment_target = "12.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
   
   s.tvos.deployment_target = "10.0"
@@ -19,4 +19,16 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.8"
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
 
+  s.pod_target_xcconfig = {
+    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+    "OBJC_INCLUDE_PATH" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+  }
+
+  s.user_target_xcconfig = {
+    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+    "OBJC_INCLUDE_PATH" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+  }
+  
+  s.vendored_frameworks = "Clibsodium.xcframework"
+  
 end
