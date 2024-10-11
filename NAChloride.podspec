@@ -19,13 +19,13 @@ Pod::Spec.new do |s|
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
 
   s.pod_target_xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium"'
   }
 
   s.user_target_xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/Clibsodium"'
+    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium"'
   }
   
-  s.vendored_frameworks = "Clibsodium.xcframework"
+  s.vendored_frameworks = "NAClibsodium.xcframework"
   
 end

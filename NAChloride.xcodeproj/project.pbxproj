@@ -75,8 +75,8 @@
 		006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
 		006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
 		006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
-		1DC8FFF22CB9340000A8ABB4 /* Clibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF12CB9340000A8ABB4 /* Clibsodium.xcframework */; };
-		1DC8FFF52CB9340900A8ABB4 /* Clibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF12CB9340000A8ABB4 /* Clibsodium.xcframework */; };
+		1DC8FFF92CB95E6E00A8ABB4 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
+		1DC8FFFC2CB95E7400A8ABB4 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,7 +140,7 @@
 		006246B71D8E0A91009DDFA8 /* NATestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATestUtils.h; sourceTree = "<group>"; };
 		006246B81D8E0A91009DDFA8 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
 		1D33CFE22CB5878200F3F72B /* NAChloride.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
-		1DC8FFF12CB9340000A8ABB4 /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Clibsodium.xcframework; sourceTree = "<group>"; };
+		1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = NAClibsodium.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC8FFF22CB9340000A8ABB4 /* Clibsodium.xcframework in Frameworks */,
+				1DC8FFFC2CB95E7400A8ABB4 /* NAClibsodium.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC8FFF52CB9340900A8ABB4 /* Clibsodium.xcframework in Frameworks */,
+				1DC8FFF92CB95E6E00A8ABB4 /* NAClibsodium.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +272,7 @@
 		1DC8FFF02CB9340000A8ABB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1DC8FFF12CB9340000A8ABB4 /* Clibsodium.xcframework */,
+				1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
