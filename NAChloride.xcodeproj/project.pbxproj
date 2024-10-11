@@ -670,6 +670,10 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NAChloride/Frameworks",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -695,6 +699,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NAChloride/Frameworks",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -750,6 +758,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NAChloride/Frameworks",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
@@ -774,6 +786,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/NAChloride/Frameworks",
+					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
