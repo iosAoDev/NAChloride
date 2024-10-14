@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {
     "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium"'
-    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/src/libsodium/include/sodium\" \"$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/libsodium/src/libsodium/include\"'
+    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/src/libsodium/include/sodium\" "$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/libsodium/src/libsodium/include\"'
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS'
   }
 
   s.user_target_xcconfig = {
     "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium"'
-    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/src/libsodium/include/sodium\" \"$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/libsodium/src/libsodium/include\"'
+    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/src/libsodium/include/sodium\" "$(inherited) "${PODS_XCFRAMEWORKS_BUILD_DIR}/NAClibsodium/libsodium/src/libsodium/include\"'
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS'
   }
   
