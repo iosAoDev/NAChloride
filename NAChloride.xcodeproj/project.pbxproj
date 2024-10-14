@@ -75,8 +75,10 @@
 		006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
 		006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
 		006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
-		1DC8FFF92CB95E6E00A8ABB4 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
-		1DC8FFFC2CB95E7400A8ABB4 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
+		1D7DE5C32CBD7FA200AD5E62 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
+		1D7DE5C42CBD7FA200AD5E62 /* NAClibsodium.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1D7DE5C62CBD7FA800AD5E62 /* NAClibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; };
+		1D7DE5C72CBD7FA800AD5E62 /* NAClibsodium.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC8FFF82CB95E6E00A8ABB4 /* NAClibsodium.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +97,31 @@
 			remoteInfo = "NAChloride iOS";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1D7DE5C52CBD7FA200AD5E62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D7DE5C42CBD7FA200AD5E62 /* NAClibsodium.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D7DE5C82CBD7FA800AD5E62 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1D7DE5C72CBD7FA800AD5E62 /* NAClibsodium.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		006246001D8E0899009DDFA8 /* NAChloride.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NAChloride.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC8FFFC2CB95E7400A8ABB4 /* NAClibsodium.xcframework in Frameworks */,
+				1D7DE5C32CBD7FA200AD5E62 /* NAClibsodium.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,7 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DC8FFF92CB95E6E00A8ABB4 /* NAClibsodium.xcframework in Frameworks */,
+				1D7DE5C62CBD7FA800AD5E62 /* NAClibsodium.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +356,7 @@
 				006245FC1D8E0899009DDFA8 /* Frameworks */,
 				006245FD1D8E0899009DDFA8 /* Headers */,
 				006245FE1D8E0899009DDFA8 /* Resources */,
+				1D7DE5C52CBD7FA200AD5E62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -365,6 +393,7 @@
 				0062465D1D8E0962009DDFA8 /* Frameworks */,
 				0062465E1D8E0962009DDFA8 /* Headers */,
 				0062465F1D8E0962009DDFA8 /* Resources */,
+				1D7DE5C82CBD7FA800AD5E62 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -429,6 +458,8 @@
 				en,
 			);
 			mainGroup = 006245F61D8E0899009DDFA8;
+			packageReferences = (
+			);
 			productRefGroup = 006246011D8E0899009DDFA8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -670,10 +701,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/NAChloride/Frameworks",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -700,10 +728,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/NAChloride/Frameworks",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -759,10 +784,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/NAChloride/Frameworks",
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
@@ -789,10 +812,8 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(PROJECT_DIR)/NAChloride/Frameworks",
-					"$(inherited)",
-				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
 				SDKROOT = iphoneos;
