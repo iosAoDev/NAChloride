@@ -701,6 +701,15 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DNATIVE_LITTLE_ENDIAN=1",
+					"-DHAVE_MADVISE",
+					"-DHAVE_MMAP",
+					"-DHAVE_MPROTECT",
+					"-DHAVE_POSIX_MEMALIGN",
+					"-DHAVE_WEAK_SYMBOLS",
+				);
 				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -727,6 +736,15 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+				);
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DNATIVE_LITTLE_ENDIAN=1",
+					"-DHAVE_MADVISE",
+					"-DHAVE_MMAP",
+					"-DHAVE_MPROTECT",
+					"-DHAVE_POSIX_MEMALIGN",
+					"-DHAVE_WEAK_SYMBOLS",
 				);
 				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = rel.me.NAChloride;

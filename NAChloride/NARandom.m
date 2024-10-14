@@ -10,7 +10,7 @@
 
 #import "NAInterface.h"
 
-@import NAClibsodium;
+#import "sodium.h"
 
 @implementation NARandom
 
