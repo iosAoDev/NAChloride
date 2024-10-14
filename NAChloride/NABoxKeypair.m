@@ -11,7 +11,7 @@
 #import "NAInterface.h"
 #import "NASecureData.h"
 
-@import NAClibsodium;
+@import Clibsodium;
 
 @interface NABoxKeypair ()
 @property NSData *publicKey;
