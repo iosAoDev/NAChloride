@@ -11,7 +11,7 @@
 #import "NAInterface.h"
 #import "NASecureData.h"
 
-@import Clibsodium;
+@import NAClibsodium;
 
 @implementation NAAEAD
 

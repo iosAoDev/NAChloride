@@ -9,7 +9,7 @@
 #import "NAScrypt.h"
 #import "NAInterface.h"
 
-@import Clibsodium;
+@import NAClibsodium;
 
 @implementation NAScrypt
 

@@ -1,4 +1,4 @@
-module Clibsodium {
+module NAClibsodium {
     header "sodium.h"
     export *
 }
