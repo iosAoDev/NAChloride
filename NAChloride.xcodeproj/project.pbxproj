@@ -774,6 +774,15 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DNATIVE_LITTLE_ENDIAN=1",
+					"-DHAVE_MADVISE",
+					"-DHAVE_MMAP",
+					"-DHAVE_MPROTECT",
+					"-DHAVE_POSIX_MEMALIGN",
+					"-DHAVE_WEAK_SYMBOLS",
+				);
 				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
@@ -802,6 +811,15 @@
 					"@loader_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DNATIVE_LITTLE_ENDIAN=1",
+					"-DHAVE_MADVISE",
+					"-DHAVE_MMAP",
+					"-DHAVE_MPROTECT",
+					"-DHAVE_POSIX_MEMALIGN",
+					"-DHAVE_WEAK_SYMBOLS",
+				);
 				OTHER_LDFLAGS = "-Wl,-undefined,dynamic_lookup";
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOS";
 				PRODUCT_NAME = NAChloride;
