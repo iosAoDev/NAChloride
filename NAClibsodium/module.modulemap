@@ -1,5 +1,5 @@
 module NAClibsodium [system] {
   header "shim.h"
-  link "NAChloride"
+  link "sodium"
   export *
 }
