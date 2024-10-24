@@ -19,21 +19,17 @@ Pod::Spec.new do |s|
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
 
   s.pod_target_xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/libsodium"',
-    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/libsodium"',
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
   }
 
   s.user_target_xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/libsodium"',
-    "HEADER_SEARCH_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/libsodium"',
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
   }
   
-  s.ios.vendored_library    = 'NAChloride/libsodium/libsodium-ios.a'
-  s.osx.vendored_library    = 'NAChloride/libsodium/libsodium-osx.a'
+  s.ios.vendored_library    = 'NAChloride/libsodium/liblibsodium-iOS.a'
+  s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
 end
 
 
