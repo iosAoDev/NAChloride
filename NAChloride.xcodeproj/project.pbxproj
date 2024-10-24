@@ -2074,6 +2074,10 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
@@ -2111,6 +2115,10 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
@@ -2168,6 +2176,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
@@ -2206,6 +2218,10 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
