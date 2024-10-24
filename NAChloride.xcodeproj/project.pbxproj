@@ -2073,7 +2073,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
@@ -2086,8 +2087,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NAChloride/libsodium",
-					"$(PROJECT_DIR)/NAChloride/libsodium\\ 2",
-					"$(PROJECT_DIR)/NAChloride/libsodium\\ 2",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -2119,7 +2118,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
@@ -2132,8 +2132,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NAChloride/libsodium",
-					"$(PROJECT_DIR)/NAChloride/libsodium\\ 2",
-					"$(PROJECT_DIR)/NAChloride/libsodium\\ 2",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -2185,7 +2183,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
@@ -2226,7 +2225,8 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
 				HEADER_SEARCH_PATHS = (
-					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
 					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
