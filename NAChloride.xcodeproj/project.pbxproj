@@ -99,7 +99,6 @@
 		1DFACB8C2CCADC4B005DDDBF /* pbkdf2-sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB252CCADC4B005DDDBF /* pbkdf2-sha256.c */; };
 		1DFACB8D2CCADC4B005DDDBF /* stream_salsa2012.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB572CCADC4B005DDDBF /* stream_salsa2012.c */; };
 		1DFACB8E2CCADC4B005DDDBF /* shorthash_siphash24.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB482CCADC4B005DDDBF /* shorthash_siphash24.c */; };
-		1DFACB8F2CCADC4B005DDDBF /* libsodium-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB6D2CCADC4B005DDDBF /* libsodium-iOS-dummy.m */; };
 		1DFACB902CCADC4B005DDDBF /* blake2b-compress-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAA22CCADC4B005DDDBF /* blake2b-compress-ref.c */; };
 		1DFACB912CCADC4B005DDDBF /* hash_sha512_cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB172CCADC4B005DDDBF /* hash_sha512_cp.c */; };
 		1DFACB922CCADC4B005DDDBF /* crypto_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAF92CCADC4B005DDDBF /* crypto_stream.c */; };
@@ -133,7 +132,6 @@
 		1DFACBAE2CCADC4B005DDDBF /* crypto_pwhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAE42CCADC4B005DDDBF /* crypto_pwhash.c */; };
 		1DFACBAF2CCADC4B005DDDBF /* randombytes_nativeclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB332CCADC4B005DDDBF /* randombytes_nativeclient.c */; };
 		1DFACBB02CCADC4B005DDDBF /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB4D2CCADC4B005DDDBF /* sign.c */; };
-		1DFACBB12CCADC4B005DDDBF /* libsodium-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB712CCADC4B005DDDBF /* libsodium-macOS-dummy.m */; };
 		1DFACBB22CCADC4B005DDDBF /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB672CCADC4B005DDDBF /* verify.c */; };
 		1DFACBB32CCADC4B005DDDBF /* crypto_secretbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAED2CCADC4B005DDDBF /* crypto_secretbox.c */; };
 		1DFACBB42CCADC4B005DDDBF /* hash_sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB162CCADC4B005DDDBF /* hash_sha512.c */; };
@@ -239,11 +237,9 @@
 		1DFACC182CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAE32CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h */; };
 		1DFACC192CCADC4B005DDDBF /* crypto_core_salsa208.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAD42CCADC4B005DDDBF /* crypto_core_salsa208.h */; };
 		1DFACC1A2CCADC4B005DDDBF /* crypto_core_hchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAD02CCADC4B005DDDBF /* crypto_core_hchacha20.h */; };
-		1DFACC1B2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB6E2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch */; };
 		1DFACC1C2CCADC4B005DDDBF /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACADB2CCADC4B005DDDBF /* crypto_hash_sha512.h */; };
 		1DFACC1D2CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACACC2CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h */; };
 		1DFACC1E2CCADC4B005DDDBF /* pbkdf2-sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB262CCADC4B005DDDBF /* pbkdf2-sha256.h */; };
-		1DFACC1F2CCADC4B005DDDBF /* libsodium-macOS-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB722CCADC4B005DDDBF /* libsodium-macOS-prefix.pch */; };
 		1DFACC202CCADC4B005DDDBF /* consts_namespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACABB2CCADC4B005DDDBF /* consts_namespace.h */; };
 		1DFACC212CCADC4B005DDDBF /* u4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB612CCADC4B005DDDBF /* u4.h */; };
 		1DFACC222CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAEA2CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h */; };
@@ -303,14 +299,6 @@
 		1DFACC582CCADC4B005DDDBF /* crypto_stream_chacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAFC2CCADC4B005DDDBF /* crypto_stream_chacha20.h */; };
 		1DFACC592CCADC4B005DDDBF /* crypto_secretbox_xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAF02CCADC4B005DDDBF /* crypto_secretbox_xchacha20poly1305.h */; };
 		1DFACC5A2CCADC4B005DDDBF /* crypto_core_hsalsa20.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAD12CCADC4B005DDDBF /* crypto_core_hsalsa20.h */; };
-		1DFACC5B2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB6F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig */; };
-		1DFACC5C2CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB732CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig */; };
-		1DFACC5D2CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB702CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig */; };
-		1DFACC5E2CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB742CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig */; };
-		1DFACC5F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB6F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig */; };
-		1DFACC602CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB732CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig */; };
-		1DFACC612CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB702CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig */; };
-		1DFACC622CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1DFACB742CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig */; };
 		1DFACC632CCADC4B005DDDBF /* int128_aes128ctr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB192CCADC4B005DDDBF /* int128_aes128ctr.c */; };
 		1DFACC642CCADC4B005DDDBF /* box_curve25519xchacha20poly1305.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAAF2CCADC4B005DDDBF /* box_curve25519xchacha20poly1305.c */; };
 		1DFACC652CCADC4B005DDDBF /* crypto_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAC52CCADC4B005DDDBF /* crypto_auth.c */; };
@@ -335,7 +323,6 @@
 		1DFACC782CCADC4B005DDDBF /* pbkdf2-sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB252CCADC4B005DDDBF /* pbkdf2-sha256.c */; };
 		1DFACC792CCADC4B005DDDBF /* stream_salsa2012.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB572CCADC4B005DDDBF /* stream_salsa2012.c */; };
 		1DFACC7A2CCADC4B005DDDBF /* shorthash_siphash24.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB482CCADC4B005DDDBF /* shorthash_siphash24.c */; };
-		1DFACC7B2CCADC4B005DDDBF /* libsodium-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB6D2CCADC4B005DDDBF /* libsodium-iOS-dummy.m */; };
 		1DFACC7C2CCADC4B005DDDBF /* blake2b-compress-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAA22CCADC4B005DDDBF /* blake2b-compress-ref.c */; };
 		1DFACC7D2CCADC4B005DDDBF /* hash_sha512_cp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB172CCADC4B005DDDBF /* hash_sha512_cp.c */; };
 		1DFACC7E2CCADC4B005DDDBF /* crypto_stream.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAF92CCADC4B005DDDBF /* crypto_stream.c */; };
@@ -369,7 +356,6 @@
 		1DFACC9A2CCADC4B005DDDBF /* crypto_pwhash.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAE42CCADC4B005DDDBF /* crypto_pwhash.c */; };
 		1DFACC9B2CCADC4B005DDDBF /* randombytes_nativeclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB332CCADC4B005DDDBF /* randombytes_nativeclient.c */; };
 		1DFACC9C2CCADC4B005DDDBF /* sign.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB4D2CCADC4B005DDDBF /* sign.c */; };
-		1DFACC9D2CCADC4B005DDDBF /* libsodium-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB712CCADC4B005DDDBF /* libsodium-macOS-dummy.m */; };
 		1DFACC9E2CCADC4B005DDDBF /* verify.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB672CCADC4B005DDDBF /* verify.c */; };
 		1DFACC9F2CCADC4B005DDDBF /* crypto_secretbox.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAED2CCADC4B005DDDBF /* crypto_secretbox.c */; };
 		1DFACCA02CCADC4B005DDDBF /* hash_sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB162CCADC4B005DDDBF /* hash_sha512.c */; };
@@ -475,11 +461,9 @@
 		1DFACD042CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAE32CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h */; };
 		1DFACD052CCADC4B005DDDBF /* crypto_core_salsa208.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAD42CCADC4B005DDDBF /* crypto_core_salsa208.h */; };
 		1DFACD062CCADC4B005DDDBF /* crypto_core_hchacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAD02CCADC4B005DDDBF /* crypto_core_hchacha20.h */; };
-		1DFACD072CCADC4B005DDDBF /* libsodium-iOS-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB6E2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch */; };
 		1DFACD082CCADC4B005DDDBF /* crypto_hash_sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACADB2CCADC4B005DDDBF /* crypto_hash_sha512.h */; };
 		1DFACD092CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACACC2CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h */; };
 		1DFACD0A2CCADC4B005DDDBF /* pbkdf2-sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB262CCADC4B005DDDBF /* pbkdf2-sha256.h */; };
-		1DFACD0B2CCADC4B005DDDBF /* libsodium-macOS-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB722CCADC4B005DDDBF /* libsodium-macOS-prefix.pch */; };
 		1DFACD0C2CCADC4B005DDDBF /* consts_namespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACABB2CCADC4B005DDDBF /* consts_namespace.h */; };
 		1DFACD0D2CCADC4B005DDDBF /* u4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACB612CCADC4B005DDDBF /* u4.h */; };
 		1DFACD0E2CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFACAEA2CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h */; };
@@ -826,14 +810,6 @@
 		1DFACB6A2CCADC4B005DDDBF /* x25519_ref10.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = x25519_ref10.c; path = src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.c; sourceTree = "<group>"; };
 		1DFACB6B2CCADC4B005DDDBF /* x25519_ref10.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x25519_ref10.h; path = src/libsodium/crypto_scalarmult/curve25519/ref10/x25519_ref10.h; sourceTree = "<group>"; };
 		1DFACB6C2CCADC4B005DDDBF /* xor_afternm_aes128ctr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = xor_afternm_aes128ctr.c; path = src/libsodium/crypto_stream/aes128ctr/nacl/xor_afternm_aes128ctr.c; sourceTree = "<group>"; };
-		1DFACB6D2CCADC4B005DDDBF /* libsodium-iOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "libsodium-iOS-dummy.m"; sourceTree = "<group>"; };
-		1DFACB6E2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libsodium-iOS-prefix.pch"; sourceTree = "<group>"; };
-		1DFACB6F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "libsodium-iOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1DFACB702CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "libsodium-iOS.release.xcconfig"; sourceTree = "<group>"; };
-		1DFACB712CCADC4B005DDDBF /* libsodium-macOS-dummy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "libsodium-macOS-dummy.m"; path = "../libsodium-macOS/libsodium-macOS-dummy.m"; sourceTree = "<group>"; };
-		1DFACB722CCADC4B005DDDBF /* libsodium-macOS-prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "libsodium-macOS-prefix.pch"; path = "../libsodium-macOS/libsodium-macOS-prefix.pch"; sourceTree = "<group>"; };
-		1DFACB732CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "libsodium-macOS.debug.xcconfig"; path = "../libsodium-macOS/libsodium-macOS.debug.xcconfig"; sourceTree = "<group>"; };
-		1DFACB742CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "libsodium-macOS.release.xcconfig"; path = "../libsodium-macOS/libsodium-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibsodium-iOS.a"; path = "NAChloride/libsodium/liblibsodium-iOS.a"; sourceTree = "<group>"; };
 		1DFACD482CCADD1E005DDDBF /* liblibsodium-macOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibsodium-macOS.a"; path = "NAChloride/libsodium/liblibsodium-macOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -970,22 +946,6 @@
 				1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1DFACB752CCADC4B005DDDBF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1DFACB6D2CCADC4B005DDDBF /* libsodium-iOS-dummy.m */,
-				1DFACB6E2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch */,
-				1DFACB6F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig */,
-				1DFACB702CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig */,
-				1DFACB712CCADC4B005DDDBF /* libsodium-macOS-dummy.m */,
-				1DFACB722CCADC4B005DDDBF /* libsodium-macOS-prefix.pch */,
-				1DFACB732CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig */,
-				1DFACB742CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../../../Downloads/NAChloride-master/Pods/Target Support Files/libsodium-iOS";
 			sourceTree = "<group>";
 		};
 		1DFACB762CCADC4B005DDDBF /* libsodium */ = {
@@ -1215,7 +1175,6 @@
 				1DFACB6A2CCADC4B005DDDBF /* x25519_ref10.c */,
 				1DFACB6B2CCADC4B005DDDBF /* x25519_ref10.h */,
 				1DFACB6C2CCADC4B005DDDBF /* xor_afternm_aes128ctr.c */,
-				1DFACB752CCADC4B005DDDBF /* Support Files */,
 			);
 			path = libsodium;
 			sourceTree = "<group>";
@@ -1284,11 +1243,9 @@
 				1DFACC182CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h in Headers */,
 				1DFACC192CCADC4B005DDDBF /* crypto_core_salsa208.h in Headers */,
 				1DFACC1A2CCADC4B005DDDBF /* crypto_core_hchacha20.h in Headers */,
-				1DFACC1B2CCADC4B005DDDBF /* libsodium-iOS-prefix.pch in Headers */,
 				1DFACC1C2CCADC4B005DDDBF /* crypto_hash_sha512.h in Headers */,
 				1DFACC1D2CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h in Headers */,
 				1DFACC1E2CCADC4B005DDDBF /* pbkdf2-sha256.h in Headers */,
-				1DFACC1F2CCADC4B005DDDBF /* libsodium-macOS-prefix.pch in Headers */,
 				1DFACC202CCADC4B005DDDBF /* consts_namespace.h in Headers */,
 				1DFACC212CCADC4B005DDDBF /* u4.h in Headers */,
 				1DFACC222CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h in Headers */,
@@ -1425,11 +1382,9 @@
 				1DFACD042CCADC4B005DDDBF /* crypto_onetimeauth_poly1305.h in Headers */,
 				1DFACD052CCADC4B005DDDBF /* crypto_core_salsa208.h in Headers */,
 				1DFACD062CCADC4B005DDDBF /* crypto_core_hchacha20.h in Headers */,
-				1DFACD072CCADC4B005DDDBF /* libsodium-iOS-prefix.pch in Headers */,
 				1DFACD082CCADC4B005DDDBF /* crypto_hash_sha512.h in Headers */,
 				1DFACD092CCADC4B005DDDBF /* crypto_box_curve25519xchacha20poly1305.h in Headers */,
 				1DFACD0A2CCADC4B005DDDBF /* pbkdf2-sha256.h in Headers */,
-				1DFACD0B2CCADC4B005DDDBF /* libsodium-macOS-prefix.pch in Headers */,
 				1DFACD0C2CCADC4B005DDDBF /* consts_namespace.h in Headers */,
 				1DFACD0D2CCADC4B005DDDBF /* u4.h in Headers */,
 				1DFACD0E2CCADC4B005DDDBF /* crypto_scalarmult_curve25519.h in Headers */,
@@ -1633,10 +1588,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DFACC5B2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig in Resources */,
-				1DFACC5C2CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig in Resources */,
-				1DFACC5D2CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig in Resources */,
-				1DFACC5E2CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1651,10 +1602,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DFACC5F2CCADC4B005DDDBF /* libsodium-iOS.debug.xcconfig in Resources */,
-				1DFACC602CCADC4B005DDDBF /* libsodium-macOS.debug.xcconfig in Resources */,
-				1DFACC612CCADC4B005DDDBF /* libsodium-iOS.release.xcconfig in Resources */,
-				1DFACC622CCADC4B005DDDBF /* libsodium-macOS.release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1703,7 +1650,6 @@
 				1DFACB8C2CCADC4B005DDDBF /* pbkdf2-sha256.c in Sources */,
 				1DFACB8D2CCADC4B005DDDBF /* stream_salsa2012.c in Sources */,
 				1DFACB8E2CCADC4B005DDDBF /* shorthash_siphash24.c in Sources */,
-				1DFACB8F2CCADC4B005DDDBF /* libsodium-iOS-dummy.m in Sources */,
 				1DFACB902CCADC4B005DDDBF /* blake2b-compress-ref.c in Sources */,
 				1DFACB912CCADC4B005DDDBF /* hash_sha512_cp.c in Sources */,
 				1DFACB922CCADC4B005DDDBF /* crypto_stream.c in Sources */,
@@ -1737,7 +1683,6 @@
 				1DFACBAE2CCADC4B005DDDBF /* crypto_pwhash.c in Sources */,
 				1DFACBAF2CCADC4B005DDDBF /* randombytes_nativeclient.c in Sources */,
 				1DFACBB02CCADC4B005DDDBF /* sign.c in Sources */,
-				1DFACBB12CCADC4B005DDDBF /* libsodium-macOS-dummy.m in Sources */,
 				1DFACBB22CCADC4B005DDDBF /* verify.c in Sources */,
 				1DFACBB32CCADC4B005DDDBF /* crypto_secretbox.c in Sources */,
 				1DFACBB42CCADC4B005DDDBF /* hash_sha512.c in Sources */,
@@ -1845,7 +1790,6 @@
 				1DFACC782CCADC4B005DDDBF /* pbkdf2-sha256.c in Sources */,
 				1DFACC792CCADC4B005DDDBF /* stream_salsa2012.c in Sources */,
 				1DFACC7A2CCADC4B005DDDBF /* shorthash_siphash24.c in Sources */,
-				1DFACC7B2CCADC4B005DDDBF /* libsodium-iOS-dummy.m in Sources */,
 				1DFACC7C2CCADC4B005DDDBF /* blake2b-compress-ref.c in Sources */,
 				1DFACC7D2CCADC4B005DDDBF /* hash_sha512_cp.c in Sources */,
 				1DFACC7E2CCADC4B005DDDBF /* crypto_stream.c in Sources */,
@@ -1879,7 +1823,6 @@
 				1DFACC9A2CCADC4B005DDDBF /* crypto_pwhash.c in Sources */,
 				1DFACC9B2CCADC4B005DDDBF /* randombytes_nativeclient.c in Sources */,
 				1DFACC9C2CCADC4B005DDDBF /* sign.c in Sources */,
-				1DFACC9D2CCADC4B005DDDBF /* libsodium-macOS-dummy.m in Sources */,
 				1DFACC9E2CCADC4B005DDDBF /* verify.c in Sources */,
 				1DFACC9F2CCADC4B005DDDBF /* crypto_secretbox.c in Sources */,
 				1DFACCA02CCADC4B005DDDBF /* hash_sha512.c in Sources */,
