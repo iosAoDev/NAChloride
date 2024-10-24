@@ -2072,6 +2072,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
+				);
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -2110,6 +2118,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
+					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
+					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
+				);
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
