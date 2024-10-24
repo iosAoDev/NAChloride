@@ -2074,10 +2074,6 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
@@ -2119,10 +2115,6 @@
 				FRAMEWORK_VERSION = A;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
 					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
 				);
@@ -2191,7 +2183,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/NAChloride/libsodium";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",
@@ -2229,7 +2221,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/NAChloride/libsodium";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",
