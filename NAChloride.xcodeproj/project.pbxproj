@@ -2080,10 +2080,6 @@
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NAChloride/libsodium",
-				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",
@@ -2121,10 +2117,6 @@
 				INFOPLIST_FILE = NAChloride/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/NAChloride/libsodium",
-				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",
