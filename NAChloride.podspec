@@ -11,13 +11,18 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "12.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
-  
+  s.ios.source_files = 'NAChloride/libsodium/src/libsodium/**/*.{c,h,m}'
+    
   s.tvos.deployment_target = "10.0"
   s.tvos.source_files = 'NAChloride/**/*.{c,h,m}'
-
+  s.ios.source_files = 'NAChloride/libsodium/src/libsodium/**/*.{c,h,m}'
+  
   s.osx.deployment_target = "10.8"
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
-
+  s.ios.source_files = 'NAChloride/libsodium/src/libsodium/**/*.{c,h,m}'
+  
+  s.public_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/**/*.h'
+  
   s.pod_target_xcconfig = {
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
@@ -31,5 +36,7 @@ Pod::Spec.new do |s|
   s.ios.vendored_library    = 'NAChloride/libsodium/liblibsodium-iOS.a'
   s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
 end
+
+
 
 
