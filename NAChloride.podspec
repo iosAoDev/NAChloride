@@ -33,7 +33,7 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
   }
   
-  s.ios.vendored_library    = 'NAChloride/libsodium/liblibsodium-iOS.a'
+  s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a', 'NAChloride/libPods-NAChloride_iOS.a'
   s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
 end
 
