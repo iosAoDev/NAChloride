@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
     
   s.pod_target_xcconfig = {
-    "HEADER_SEARCH_PATHS": '"$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/sodium/" "$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/"',
+    "HEADER_SEARCH_PATHS": '"$(PODS_ROOT)/NAChloride/NAChloride/ "$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/sodium/" "$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/"',
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
   }
