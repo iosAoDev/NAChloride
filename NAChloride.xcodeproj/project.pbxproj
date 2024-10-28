@@ -586,6 +586,7 @@
 		006246B71D8E0A91009DDFA8 /* NATestUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NATestUtils.h; sourceTree = "<group>"; };
 		006246B81D8E0A91009DDFA8 /* NATestUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NATestUtils.m; sourceTree = "<group>"; };
 		1D33CFE22CB5878200F3F72B /* NAChloride.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = NAChloride.podspec; sourceTree = "<group>"; };
+		1D7550C32CD0220500F4D1B4 /* libPods-NAChloride_iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-NAChloride_iOS.a"; path = "NAChloride/libPods-NAChloride_iOS.a"; sourceTree = "<group>"; };
 		1DFACA8D2CCADC4B005DDDBF /* aead_aes256gcm_aesni.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aead_aes256gcm_aesni.c; path = src/libsodium/crypto_aead/aes256gcm/aesni/aead_aes256gcm_aesni.c; sourceTree = "<group>"; };
 		1DFACA8E2CCADC4B005DDDBF /* aead_chacha20poly1305.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aead_chacha20poly1305.c; path = src/libsodium/crypto_aead/chacha20poly1305/sodium/aead_chacha20poly1305.c; sourceTree = "<group>"; };
 		1DFACA8F2CCADC4B005DDDBF /* aead_xchacha20poly1305.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = aead_xchacha20poly1305.c; path = src/libsodium/crypto_aead/xchacha20poly1305/sodium/aead_xchacha20poly1305.c; sourceTree = "<group>"; };
@@ -942,6 +943,7 @@
 		1DC8FFF02CB9340000A8ABB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D7550C32CD0220500F4D1B4 /* libPods-NAChloride_iOS.a */,
 				1DFACD482CCADD1E005DDDBF /* liblibsodium-macOS.a */,
 				1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */,
 			);

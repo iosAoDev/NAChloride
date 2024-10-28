@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.8"
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
   
-  s.public_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/**/*.h'
+  s.public_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/**/*.h', 'NAChloride/**/*.h',
   s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
     
   s.pod_target_xcconfig = {
