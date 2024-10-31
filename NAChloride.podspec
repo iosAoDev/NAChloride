@@ -11,18 +11,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = "12.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
-    
-  s.tvos.deployment_target = "10.0"
-  s.tvos.source_files = 'NAChloride/**/*.{c,h,m}'
   
-  s.osx.deployment_target = "10.8"
-  s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
-  
-  s.public_header_files = 'NAChloride/**/*.h'
-  s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
-  
-  s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a'
-  s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
+  s.ios.vendored_libraries    = 'NAChloride/lib/libsodium.a'
+  s.header_mappings_dir = 'NAChloride/include'
+  s.public_header_files = 'NAChloride/include/**/*.h'
 end
 
 

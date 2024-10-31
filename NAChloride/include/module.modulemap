@@ -1,0 +1,4 @@
+module NALibsodium {
+    header "sodium.h"
+    export *
+}
