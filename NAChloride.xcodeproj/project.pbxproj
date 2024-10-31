@@ -2124,7 +2124,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
@@ -2165,7 +2165,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium/**";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
