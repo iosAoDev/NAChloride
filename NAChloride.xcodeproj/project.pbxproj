@@ -75,6 +75,9 @@
 		006246CA1D8E0A97009DDFA8 /* NASecureDataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B51D8E0A91009DDFA8 /* NASecureDataTest.m */; };
 		006246CB1D8E0A98009DDFA8 /* NAStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B61D8E0A91009DDFA8 /* NAStreamTest.m */; };
 		006246CC1D8E0A98009DDFA8 /* NATestUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 006246B81D8E0A91009DDFA8 /* NATestUtils.m */; };
+		1D7550D12CD41FEA00F4D1B4 /* libPods-NAChloride_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7550C32CD0220500F4D1B4 /* libPods-NAChloride_iOS.a */; };
+		1D7550D22CD41FF500F4D1B4 /* liblibsodium-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */; };
+		1D7550D32CD41FF500F4D1B4 /* liblibsodium-macOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DFACD482CCADD1E005DDDBF /* liblibsodium-macOS.a */; };
 		1DFACB772CCADC4B005DDDBF /* int128_aes128ctr.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACB192CCADC4B005DDDBF /* int128_aes128ctr.c */; };
 		1DFACB782CCADC4B005DDDBF /* box_curve25519xchacha20poly1305.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAAF2CCADC4B005DDDBF /* box_curve25519xchacha20poly1305.c */; };
 		1DFACB792CCADC4B005DDDBF /* crypto_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 1DFACAC52CCADC4B005DDDBF /* crypto_auth.c */; };
@@ -835,6 +838,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D7550D22CD41FF500F4D1B4 /* liblibsodium-iOS.a in Frameworks */,
+				1D7550D32CD41FF500F4D1B4 /* liblibsodium-macOS.a in Frameworks */,
+				1D7550D12CD41FEA00F4D1B4 /* libPods-NAChloride_iOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2118,22 +2124,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium/**";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium/private\"",
+					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NAChloride/libsodium",
+					"$(PROJECT_DIR)/NAChloride",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",
@@ -2161,22 +2165,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "";
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium/**";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Private/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public\"",
-					"\"$(PROJECT_DIR)/NAChloride/Headers/Public/libsodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include\"",
-					"\"$(PROJECT_DIR)/NAChloride/libsodium/src/libsodium/include/sodium/private\"",
+					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NAChloride/libsodium",
+					"$(PROJECT_DIR)/NAChloride",
+				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
 					"-DNATIVE_LITTLE_ENDIAN=1",

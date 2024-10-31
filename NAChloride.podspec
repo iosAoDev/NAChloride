@@ -19,19 +19,8 @@ Pod::Spec.new do |s|
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
   
   s.public_header_files = 'NAChloride/**/*.h'
+  s.header_mappings_dir = 'NAChloride/libsodium/src/libsodium/include'
   s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
-    
-  s.pod_target_xcconfig = {
-    "HEADER_SEARCH_PATHS": '"$(PODS_ROOT)/NAChloride/NAChloride/" "$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/sodium/" "$(PODS_ROOT)/NAChloride/NAChloride/libsodium/src/libsodium/include/"',
-    "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
-    "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
-  }
-
-  s.user_target_xcconfig = {
-    "HEADER_SEARCH_PATHS": '"$(PROJECT_DIR)/NAChloride/NAChloride/" "$(PROJECT_DIR)/libsodium/src/libsodium/include/sodium/" "$(PROJECT_DIR)/libsodium/src/libsodium/include/"',
-    "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
-    "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
-  }
   
   s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a', 'NAChloride/libPods-NAChloride_iOS.a'
   s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
