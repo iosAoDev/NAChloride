@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   }
 
   s.user_target_xcconfig = {
-    "HEADER_SEARCH_PATHS": '"$(PROJECT_DIR)/NAChloride/NAChloride/" "$(PROJECT_DIR)/libsodium/src/libsodium/include/sodium/" "$(PROJECT_DIR)/libsodium/src/libsodium/include/"',
+    "HEADER_SEARCH_PATHS": '"$(PROJECT_DIR)/NAChloride/NAChloride/"',
     "OTHER_CFLAGS" => '-DNATIVE_LITTLE_ENDIAN=1 -DHAVE_MADVISE -DHAVE_MMAP -DHAVE_MPROTECT -DHAVE_POSIX_MEMALIGN -DHAVE_WEAK_SYMBOLS',
     "OTHER_LDFLAGS" => '-Wl,-undefined,dynamic_lookup'
   }
