@@ -1241,7 +1241,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/lib/**";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/include/**",
-					"$(SRCROOT)/NA/**",
+					"$(SRCROOT)/NAChloride/NA/**",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -1285,7 +1285,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/lib/**";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)/include/**",
-					"$(SRCROOT)/NA/**",
+					"$(SRCROOT)/NAChloride/NA/**",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
