@@ -2127,7 +2127,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
+					"$(PROJECT_DIR)/NAChloride/NAChloride",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -2168,7 +2168,7 @@
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/NAChloride/libsodium";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(PROJECT_DIR)/NAChloride/NAChloride\"",
+					"$(PROJECT_DIR)/NAChloride/NAChloride",
 				);
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
