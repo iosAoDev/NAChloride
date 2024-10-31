@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   
   s.ios.vendored_libraries    = 'NAChloride/lib/libsodium.a'
   s.header_mappings_dir = 'NAChloride/include'
-  s.public_header_files = 'NAChloride/include/**/*.h'
+  s.public_header_files = 'NAChloride/include/**/*.h', 'NAChloride/NA/**/*.h'
 end
 
 
