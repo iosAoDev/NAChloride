@@ -416,7 +416,6 @@
 		006246021D8E0899009DDFA8 /* NAChloride */ = {
 			isa = PBXGroup;
 			children = (
-				1D7551A72CD4300F00F4D1B4 /* NA */,
 				1D7551192CD42D6200F4D1B4 /* include */,
 				1D7551A22CD42D6B00F4D1B4 /* lib */,
 				006246041D8E0899009DDFA8 /* Info.plist */,
@@ -535,25 +534,6 @@
 		1D7551192CD42D6200F4D1B4 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				1D7551162CD42D6200F4D1B4 /* sodium */,
-				1D7551172CD42D6200F4D1B4 /* module.modulemap */,
-				1D7551182CD42D6200F4D1B4 /* sodium.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		1D7551A22CD42D6B00F4D1B4 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				1D7551A02CD42D6B00F4D1B4 /* libsodium.a */,
-				1D7551A12CD42D6B00F4D1B4 /* libsodium.dylib */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		1D7551A72CD4300F00F4D1B4 /* NA */ = {
-			isa = PBXGroup;
-			children = (
 				006246031D8E0899009DDFA8 /* NAChloride.h */,
 				0062461A1D8E08F3009DDFA8 /* NAAEAD.h */,
 				0062461B1D8E08F3009DDFA8 /* NAAEAD.m */,
@@ -577,8 +557,20 @@
 				0062462D1D8E08F3009DDFA8 /* NASecureData.m */,
 				0062462E1D8E08F3009DDFA8 /* NAStream.h */,
 				0062462F1D8E08F3009DDFA8 /* NAStream.m */,
+				1D7551162CD42D6200F4D1B4 /* sodium */,
+				1D7551172CD42D6200F4D1B4 /* module.modulemap */,
+				1D7551182CD42D6200F4D1B4 /* sodium.h */,
 			);
-			path = NA;
+			path = include;
+			sourceTree = "<group>";
+		};
+		1D7551A22CD42D6B00F4D1B4 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				1D7551A02CD42D6B00F4D1B4 /* libsodium.a */,
+				1D7551A12CD42D6B00F4D1B4 /* libsodium.dylib */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 		1DC8FFF02CB9340000A8ABB4 /* Frameworks */ = {
@@ -1239,10 +1231,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/lib/**";
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/include/**",
-					"$(SRCROOT)/NAChloride/NA/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
@@ -1283,10 +1272,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/lib/**";
-				HEADER_SEARCH_PATHS = (
-					"$(SRCROOT)/include/**",
-					"$(SRCROOT)/NAChloride/NA/**",
-				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/include/**";
 				INFOPLIST_FILE = "NAChloride iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
