@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'NAChloride/**/*.h'
   s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
   
-  s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a', 'NAChloride/libPods-NAChloride_iOS.a'
+  s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a'
   s.osx.vendored_library    = 'NAChloride/libsodium/liblibsodium-macOS.a'
 end
 
