@@ -19,7 +19,6 @@ Pod::Spec.new do |s|
   s.osx.source_files = 'NAChloride/**/*.{c,h,m}'
   
   s.public_header_files = 'NAChloride/**/*.h'
-  s.header_mappings_dir = 'NAChloride/libsodium/src/libsodium/include'
   s.private_header_files = 'NAChloride/libsodium/src/libsodium/include/sodium/private/**/*.h'
   
   s.ios.vendored_libraries    = 'NAChloride/libsodium/liblibsodium-iOS.a', 'NAChloride/libPods-NAChloride_iOS.a'
