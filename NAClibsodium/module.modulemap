@@ -1,5 +1,0 @@
-module NAClibsodium [system] {
-  header "shim.h"
-  link "sodium"
-  export *
-}

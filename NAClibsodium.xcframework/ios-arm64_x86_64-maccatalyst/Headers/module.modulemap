@@ -1,4 +1,0 @@
-module NAClibsodium {
-    header "sodium.h"
-    export *
-}
