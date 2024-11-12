@@ -12,8 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "12.0"
   s.ios.source_files = 'NAChloride/**/*.{c,h,m}'
   
-  s.ios.vendored_libraries    = 'NAChloride/lib/libsodium.dylib', 'NAChloride/lib/libsodium.a'
-  s.ios.vendored_frameworks   = 'NAChloride/lib/libsodium.dylib', 'NAChloride/lib/libsodium.a'
+  s.ios.vendored_libraries    = 'NAChloride/lib/libsodium.a'
   s.header_mappings_dir = 'NAChloride/include'
   s.public_header_files = 'NAChloride/include/**/*.h'
 
