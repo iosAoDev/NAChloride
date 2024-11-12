@@ -213,6 +213,10 @@
 		1D7551A42CD42D6B00F4D1B4 /* libsodium.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7551A12CD42D6B00F4D1B4 /* libsodium.dylib */; };
 		1D7551A52CD42D6B00F4D1B4 /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7551A02CD42D6B00F4D1B4 /* libsodium.a */; };
 		1D7551A62CD42D6B00F4D1B4 /* libsodium.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7551A12CD42D6B00F4D1B4 /* libsodium.dylib */; platformFilter = ios; };
+		1DB8655E2CE370D5003C0DFC /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB8655D2CE370D5003C0DFC /* libsodium.a */; };
+		1DB8655F2CE370D5003C0DFC /* libsodium.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB8655D2CE370D5003C0DFC /* libsodium.a */; };
+		1DB865612CE370E1003C0DFC /* libsodium.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB865602CE370E1003C0DFC /* libsodium.dylib */; platformFilter = ios; };
+		1DB865622CE370E1003C0DFC /* libsodium.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB865602CE370E1003C0DFC /* libsodium.dylib */; platformFilter = ios; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,6 +351,8 @@
 		1D7551182CD42D6200F4D1B4 /* sodium.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sodium.h; sourceTree = "<group>"; };
 		1D7551A02CD42D6B00F4D1B4 /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
 		1D7551A12CD42D6B00F4D1B4 /* libsodium.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsodium.dylib; sourceTree = "<group>"; };
+		1DB8655D2CE370D5003C0DFC /* libsodium.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libsodium.a; sourceTree = "<group>"; };
+		1DB865602CE370E1003C0DFC /* libsodium.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libsodium.dylib; sourceTree = "<group>"; };
 		1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibsodium-iOS.a"; path = "NAChloride/libsodium/liblibsodium-iOS.a"; sourceTree = "<group>"; };
 		1DFACD482CCADD1E005DDDBF /* liblibsodium-macOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "liblibsodium-macOS.a"; path = "NAChloride/libsodium/liblibsodium-macOS.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -373,6 +379,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB8655E2CE370D5003C0DFC /* libsodium.a in Frameworks */,
+				1DB865622CE370E1003C0DFC /* libsodium.dylib in Frameworks */,
 				1D7551A52CD42D6B00F4D1B4 /* libsodium.a in Frameworks */,
 				1D7551A62CD42D6B00F4D1B4 /* libsodium.dylib in Frameworks */,
 			);
@@ -382,6 +390,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB865612CE370E1003C0DFC /* libsodium.dylib in Frameworks */,
+				1DB8655F2CE370D5003C0DFC /* libsodium.a in Frameworks */,
 				0062466A1D8E0963009DDFA8 /* NAChloride.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,6 +586,8 @@
 		1DC8FFF02CB9340000A8ABB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DB8655D2CE370D5003C0DFC /* libsodium.a */,
+				1DB865602CE370E1003C0DFC /* libsodium.dylib */,
 				1D7550C32CD0220500F4D1B4 /* libPods-NAChloride_iOS.a */,
 				1DFACD482CCADD1E005DDDBF /* liblibsodium-macOS.a */,
 				1DFACD472CCADD14005DDDBF /* liblibsodium-iOS.a */,
@@ -1243,6 +1255,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NAChloride/lib",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1284,6 +1297,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/NAChloride/lib",
+					"$(PROJECT_DIR)",
 				);
 				OTHER_CFLAGS = (
 					"$(inherited)",
@@ -1315,6 +1329,10 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -1331,6 +1349,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rel.me.NAChloride-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
