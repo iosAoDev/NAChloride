@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.public_header_files = 'NAChloride/include/**/*.h'
   
   s.pod_target_xcconfig = {
-    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/lib/libsodium.a"',
+    "SWIFT_INCLUDE_PATHS" => '$(inherited) "${PODS_TARGET_SRCROOT}/NAChloride/lib"',
   }
 
 end
